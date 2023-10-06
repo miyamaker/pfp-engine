@@ -41,21 +41,20 @@ const background = {
 const layerConfigurations = [
   {
     growEditionSizeTo: 10,
-    namePrefix: "Series 2", // Use to add a name to Metadata `name:`
+    namePrefix: "Miyanetic", // Use to add a name to Metadata `name:`
     layersOrder: [
-      { name: "Background" },
-      {
-        name: "Back Accessory",
-        // options: {
-        //   bypassDNA: true,
-        // },
-      },
-      { name: "Head" },
-      { name: "Clothes" },
-      { name: "Eyes" },
-      { name: "Hair" },
-      { name: "Accessory" },
-      { name: "Shirt Accessories" },
+      { name: "BG" },
+      { name: "z1,Body" },
+      { name: "z1,Eyes" },
+      { name: "z1,Mouths" },
+      { name: "z1,Noses" },
+      { name: "z2,Mask" },
+      { name: "z2,Top" },
+      { name: "Top Behind" },
+      { name: "z2,Hat" },
+      { name: "Hat Behind" },
+      { name: "z1,Hair" },
+      { name: "Hair Behind" },
     ],
   },
   // {
@@ -83,7 +82,7 @@ const debugLogs = true;
  ***********************/
 
 // if you use an empty/transparent file, set the name here.
-const emptyLayerName = "NONE";
+const emptyLayerName = "None";
 
 /**
  * Incompatible items can be added to this object by a files cleanName
@@ -96,6 +95,9 @@ const incompatible = {
   //   Red: ["Dark Long"],
   //   // directory incompatible with directory example
   //   White: ["rare-Pink-Pompadour"],
+  "Cyborg Face Melt": ["z1,Noses", "z1,Mouths", "Lazer Ascension"],
+  SHOCKED: "z1,Noses",
+  "z2,Hat": "z1,Hair"
 };
 
 /**
@@ -108,7 +110,38 @@ const incompatible = {
  * further in the stack
  */
 const forcedCombinations = {
-  // floral: ["MetallicShades", "Golden Sakura"],
+  "Mutant Body": ["Mutant Mouths"],
+  "Futuristic Sweater": ["Behind Futuristic Sweater"],
+  "Velvet Gold Skeleton Army Elitist": ["High Collar Winter Jacket"],
+  "Aztec Warrior": ["Behind Aztec Warrior"],
+  "Chinese Royalty": ["Behind Chinese Royalty"],
+  "Asymmetrical impossible Cornrows": ["Behind Asymmetrical Impossible Cornrows"],
+  "Black Messy Short": ["Behind Black Messy Short"],
+  "Black Pigtails": ["Behind Black Pigtails"],
+  "Black Straight Straight Bangs with Diamond Clip": ["Behind Black Straight Straight Bangs with Diamond Clip"],
+  "Blonde Crazy Ties": ["Behind Blonde Crazy Ties"],
+  "Blonde Curls": ["Behind Blonde Curls"],
+  "Blonde spiked Bangs": ["Behind Blonde spiked Bangs"],
+  "Blue Bangs": ["Behind BBlue Bangs"],
+  "Blue Bob": ["Behind Blue Bob"],
+  "Brown Curly": ["Behind Brown Curly"],
+  "Brown Long Wavy": ["Behind Brown Long Wavy"],
+  "Brunette Long Straight": ["Behind Brunette Long Straight"],
+  "Brunette Wind Blown Long": ["Behind Brunette Wind Blown Long"],
+  "Dreadlocks with Green Bangs.png": ["Behind Dreadlocks with Green Bangs.png"],
+  "Faded SPikes": ["Behind Faded SPikes"],
+  "Green Milady Bangs": ["Behind Green Milady Bangs"],
+  "Long Dreads": ["Behind Long Dreads"],
+  "Long Norse Blonde hair with Princess Braids": ["Behind Long Norse Blonde hair with Princess Braids"],
+  "Messy Bedhead": ["Behind Messy Bedhead"],
+  "Pastel Green Emo Swoop": ["Behind Pastel Green Emo Swoop"],
+  "Pink and Blue blend Bangs": ["Pink and Blue blend Bangs"],
+  "Pink and Blue Pigtails": ["Behind Pink and Blue Pigtails"],
+  "Pink Sailor Miya Ponytails": ["Behind Pink Sailor Miya Ponytails"],
+  "Purple Koolio Braids": ["Behind Purple Koolio Braids"],
+  "Red side cut Bangs": ["Behind Red side cut Bangs"],
+  "Red Straight Bangs with Sidecut": ["Behind Red Straight Bangs with Sidecut"],
+  "Spiky Brown Mullet": ["Behind Spiky Brown Mullet"]
 };
 
 /**
@@ -117,8 +150,8 @@ const forcedCombinations = {
  * clean-filename: trait-value override pairs. Wrap filenames with spaces in quotes.
  */
 const traitValueOverrides = {
-  Helmet: "Space Helmet",
-  "gold chain": "GOLDEN NECKLACE",
+  // Helmet: "Space Helmet",
+  // "gold chain": "GOLDEN NECKLACE",
 };
 
 const extraMetadata = {};
