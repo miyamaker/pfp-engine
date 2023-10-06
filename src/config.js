@@ -95,9 +95,8 @@ const incompatible = {
   //   Red: ["Dark Long"],
   //   // directory incompatible with directory example
   //   White: ["rare-Pink-Pompadour"],
-  "Cyborg Face Melt": ["z1,Noses", "z1,Mouths", "Lazer Ascension"],
-  SHOCKED: "z1,Noses",
-  "z2,Hat": "z1,Hair"
+  "Cyborg Face Melt": ["Noses 1", "Hangry Blush", "Lazer Ascension"],
+  "SHOCKED": ["Noses 1", "Hangry Blush"],
 };
 
 /**
@@ -110,11 +109,15 @@ const incompatible = {
  * further in the stack
  */
 const forcedCombinations = {
-  "Mutant Body": ["Mutant Mouths"],
+  "Cyborg Face Melt": "Green Warrior for Christ",
+
+  // Top and HAt behind Links
   "Futuristic Sweater": ["Behind Futuristic Sweater"],
   "Velvet Gold Skeleton Army Elitist": ["High Collar Winter Jacket"],
   "Aztec Warrior": ["Behind Aztec Warrior"],
   "Chinese Royalty": ["Behind Chinese Royalty"],
+
+  //Hair Behind links
   "Asymmetrical impossible Cornrows": ["Behind Asymmetrical Impossible Cornrows"],
   "Black Messy Short": ["Behind Black Messy Short"],
   "Black Pigtails": ["Behind Black Pigtails"],
