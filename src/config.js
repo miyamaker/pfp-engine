@@ -16,7 +16,7 @@ const layersDir = path.join(basePath, "/layers");
  ***********************/
 
 const description =
-  "This is the description of your NFT project, remember to replace this";
+  "Cybernetic Angel is a collection of 4,444 generative pfpNFT's inspired by accelerationist beings.";
 const baseUri = "ipfs://NewUriToReplace";
 
 const outputJPEG = false; // if false, the generator outputs png's
@@ -40,7 +40,7 @@ const background = {
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 111,
     namePrefix: "Miyanetic", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "BG" },
