@@ -41,7 +41,7 @@ const background = {
 const layerConfigurations = [
   {
     growEditionSizeTo: 111,
-    namePrefix: "Miyanetic", // Use to add a name to Metadata `name:`
+    namePrefix: "Miyanetic Angel", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "BG" },
       { name: "z1,Body" },
@@ -95,8 +95,8 @@ const incompatible = {
   //   Red: ["Dark Long"],
   //   // directory incompatible with directory example
   //   White: ["rare-Pink-Pompadour"],
-  "Cyborg Face Melt": ["Noses 1", "Hangry Blush", "Lazer Ascension"],
-  "SHOCKED": ["Noses 1", "Hangry Blush"],
+  "z2,Cyborg Face Melt": ["z1,Noses 1", "z1,Hangry Blush", "z2,Lazer Ascension"],
+  "z1,SHOCKED": ["z1,Noses 1", "z1,Hangry Blush"],
 };
 
 /**
@@ -109,7 +109,9 @@ const incompatible = {
  * further in the stack
  */
 const forcedCombinations = {
-  "Cyborg Face Melt": "Green Warrior for Christ",
+  // "Cyborg Face Melt": "Green Warrior for Christ",
+
+  // Hats with not good hair
 
   // Top and HAt behind Links
   "Futuristic Sweater": ["Behind Futuristic Sweater"],

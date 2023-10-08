@@ -1,7 +1,7 @@
 {
-  "name": "nftchef-art-engine",
-  "version": "2.2.0",
-  "description": "NFTChef Fork - Hard fork from HashLips Art Engine, is a tool used to create multiple different instances of artworks based on provided layers. Most config is the same as Hashlips",
+  "name": "pfp-engine",
+  "version": "1.0.0",
+  "description": "Miyamaker Fork - Hard fork from NFTChef Art Engine, is a tool used to create multiple different instances of artworks based on provided layers. Most config is the same as Hashlips",
   "main": "index.js",
   "bin": "index.js",
   "engines": {
